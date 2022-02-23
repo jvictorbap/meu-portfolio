@@ -1,13 +1,65 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body::-webkit-scrollbar {
+  width: 5px;               /* width of the entire scrollbar */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body::-webkit-scrollbar-track {
+  background: black;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FFFCFF;    /* color of the scroll thumb */
+  border-radius: 10px;       /* roundness of the scroll thumb */
+}
+
+.aboutmeimage {
+  box-shadow: 0px 0px 50px 5px #0e6ba8;
+}
+
+.aboutmetitle {
+  text-shadow: 5px 5px 2px #0E6BA8;
+}
+
+.altura {
+  height: 400px;
+}
+
+body {
+  background-color: #0B0A07;
+  color: #FFFCFF;
+}
+
+.Cover {
+  min-height: 100vh;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Rubik:ital,wght@1,500&display=swap');
+
+.fonte {
+  font-family: 'Rubik', sans-serif;
+}
+
+.margincenterheader {
+  margin: 0 auto;
+}
+
+.margincenter {
+  margin: 0 auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+ 
+.sobremim {
+  font-family: 'Itim', cursive;
+  text-shadow: 3px 3px 2px #0E6BA8;
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
