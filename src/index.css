@@ -23,13 +23,22 @@ body::-webkit-scrollbar-thumb {
   text-shadow: 5px 5px 2px #0E6BA8;
 }
 
+.moremetitle {
+  text-shadow: 1px 3px 2px #EFE943;
+}
+
 .altura {
   height: 400px;
 }
 
 body {
-  background-color: #0B0A07;
+  /* background-color: #0B0A07; */
   color: #FFFCFF;
+  scroll-behavior: smooth;
+}
+
+.shadowtitle {
+  text-shadow: 5px 5px 2px #0E6BA8;
 }
 
 .Cover {
@@ -55,6 +64,10 @@ body {
 .sobremim {
   font-family: 'Itim', cursive;
   text-shadow: 3px 3px 2px #0E6BA8;
+}
+
+.teste {
+  margin-top: calc(100vh - 90vh - 20px);
 }
 
 

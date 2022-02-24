@@ -5,10 +5,10 @@ import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
 function ScrollDown() {
   return (
     // Scroll Down
-    <div id='scrolldown' className='absolute bottom-5 flex flex-col items-center margincenter w-full'>
+    <div id='scrolldown' className='mt-12 animate-bounce flex flex-col items-center w-full'>
       <p className='fonte'>DESLIZE PARA BAIXO</p>
       <a href='#portfolio' className='text-primary text-5xl'>
-      <FontAwesomeIcon icon={faAngleDoubleDown} />
+      <FontAwesomeIcon className='mt-2' icon={faAngleDoubleDown} />
       </a>
     </div>
   )
