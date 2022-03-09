@@ -4,19 +4,11 @@ import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
 
 function ScrollDown() {
 
-  const divNode = document.getElementsByClassName('scroll')
-
-  React.useEffect(() => {
-    document.getElementById('scrolldown').addEventListener('click', () => {
-      divNode[0].scrollIntoView({ behavior: 'smooth' })
-    })
-  })
-
   return (
     // Scroll Down
     <div id='scrolldown' className='mt-12 animate-bounce flex flex-col items-center w-full'>
       <p className='fonte'>DESLIZE PARA BAIXO</p>
-      <a href='#front' className='text-primary text-5xl'>
+      <a href='#front' className='text-primary text-5xl' >
         <FontAwesomeIcon className='mt-2' icon={faAngleDoubleDown} />
       </a>
     </div>
