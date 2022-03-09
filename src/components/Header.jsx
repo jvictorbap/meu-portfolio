@@ -3,16 +3,16 @@ import logo from '../images/Screenshot_4.png'
 
 function Header() {
   return (
-    <header id='header' className='border-b-2 border-quinary bg-emerald-300 h-20 flex rounded-lg w-11/12 margincenterheader'>
+    <header id='header' className='scroll 0 border-b-2 border-quinary bg-emerald-300 h-20 flex rounded-lg w-11/12 margincenterheader'>
       <div className='flex flex-row justify-center items-center grow'>
         <div className='flex flex-row w-2/6 justify-center '>
           <nav className='w-full'>
             <ul className='flex flex-row justify-evenly'>
               <li>
-                <a href='#0' className='text-2xl fonte text-primary'>Home</a>
+                <a href='#0' className='text-2xl fonte text-primary'>About</a>
               </li>
               <li>
-                <a href='#0' className='text-2xl fonte text-primary'>About</a>
+                <a href='#0' className='text-2xl fonte text-primary'>Projects</a>
               </li>
               <li>
                 <a href='#0' className='text-2xl fonte text-primary'>Contact</a>

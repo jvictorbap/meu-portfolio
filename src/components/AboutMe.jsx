@@ -27,7 +27,7 @@ function AboutMe() {
       {/* TEXTO */}
       <div className='flex mt-6 items-center w-full lg:w-2/4'>
         <p className='text-5xl text-center sobremim text-primary'>Olá, me chamo José Victor, tenho 20 anos, moro atualmente em
-          Sobral-CE e sou um desenvolvedor full-stack junior. Sou apaixonado
+          Sobral-CE e sou um desenvolvedor full-stack com foco em back-end. Sou apaixonado
           por tecnologia e por programação. Atualmente estou cursando Full
           Stack Web Development na Trybe.</p>
       </div>

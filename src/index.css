@@ -24,7 +24,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .moremetitle {
-  text-shadow: 1px 3px 2px #EFE943;
+  text-shadow: 5px 5px 2px deeppink;
 }
 
 .altura {
@@ -32,17 +32,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  /* background-color: #0B0A07; */
   color: #FFFCFF;
-  scroll-behavior: smooth;
 }
 
 .shadowtitle {
   text-shadow: 5px 5px 2px #0E6BA8;
-}
-
-.Cover {
-  min-height: 100vh;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Rubik:ital,wght@1,500&display=swap');
@@ -70,6 +64,9 @@ body {
   margin-top: calc(100vh - 90vh - 20px);
 }
 
+.teste2 {
+  background-color: black;
+}
 
 * {
   box-sizing: border-box;

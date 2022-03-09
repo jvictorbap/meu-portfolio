@@ -8,7 +8,7 @@ function ScrollDown() {
     <div id='scrolldown' className='mt-12 animate-bounce flex flex-col items-center w-full'>
       <p className='fonte'>DESLIZE PARA BAIXO</p>
       <a href='#portfolio' className='text-primary text-5xl'>
-      <FontAwesomeIcon className='mt-2' icon={faAngleDoubleDown} />
+        <FontAwesomeIcon id='icone' className='mt-2' icon={faAngleDoubleDown} />
       </a>
     </div>
   )

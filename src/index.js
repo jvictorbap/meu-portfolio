@@ -7,13 +7,11 @@ import Home from "./pages/Home";
 import QRGenerator from "./pages/QRGenerator";
 
 ReactDOM.render(
-  <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/qrcode" element={<QRGenerator />} />
       </Routes>
-    </BrowserRouter>
-  </React.StrictMode>,
+    </BrowserRouter>,
   document.getElementById("root")
 );

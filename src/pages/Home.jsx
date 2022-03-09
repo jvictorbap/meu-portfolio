@@ -6,14 +6,17 @@ import MoreMe from '../components/MoreMe'
 import ScrollDown from '../components/ScrollDown'
 
 function Home() {
+
   return (
     <>
-      <Cover>
+      <Cover anime='fade-down' duration='1000'>
         <Header />
         <AboutMe />
         <ScrollDown />
       </Cover>
+      <Cover>
       <MoreMe />
+      </Cover>
     </>
   )
 }
