@@ -57,7 +57,7 @@ function MoreMe() {
         </TypeIt>
       </div>
       <div className='flex flex-col justify-center items-center h-full w-full'>
-        <div className='scroll h-screen flex w-full margincenter 1'>
+        <div id='front' className='scroll h-screen flex w-full margincenter 1'>
           <div className='flex justify-center items-center w-full'>
             <div className='flex w-2/4 h-full justify-center items-center'>
               <img src={frontend} alt='teaching' className='w-full h-full' />
