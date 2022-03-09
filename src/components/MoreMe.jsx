@@ -30,7 +30,11 @@ function MoreMe() {
     disableScroll();
     let div = 0;
     document.body.addEventListener('wheel', async (event) => {
-      div = div + 1
+      if (String(event.deltaY).startsWith('-')) {
+        div = div - 1
+      } else {
+        div = div + 1
+      }
       if (div > divNode.length - 1) {
         div = 0
       }
