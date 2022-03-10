@@ -1,49 +1,47 @@
 /* eslint-disable getter-return */
 import React, { useCallback, useEffect, useState } from 'react'
 import TypeIt from "typeit-react";
-// import backend from '../images/undraw_teaching_re_g7e3.svg'
-// import frontend from '../images/undraw_building_blocks_re_rwls.svg'
 import FrontItem from './FrontItem';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons'
 
 function MoreMe() {
 
-  // function preventDefault(e) {
-  //   e.preventDefault();
-  // }
+  function preventDefault(e) {
+    e.preventDefault();
+  }
 
-  // let supportsPassive = false;
-  // try {
-  //   window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
-  //     get: () => { supportsPassive = true; }
-  //   }));
-  // } catch (e) { }
-  // var wheelOpt = supportsPassive ? { passive: false } : false;
-  // var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+  let supportsPassive = false;
+  try {
+    window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+      get: () => { supportsPassive = true; }
+    }));
+  } catch (e) { }
+  var wheelOpt = supportsPassive ? { passive: false } : false;
+  var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
 
-  // const divNode = document.getElementsByClassName('scroll')
+  const divNode = document.getElementsByClassName('scroll')
 
-  // function disableScroll() {
-  //   window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
-  //   window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
-  // }
+  function disableScroll() {
+    window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+    window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+  }
 
-  // React.useEffect(() => {
-  //   disableScroll();
-  //   let div = 0;
-  //   document.body.addEventListener('wheel', async (event) => {
-  //     if (String(event.deltaY).startsWith('-')) {
-  //       div = div - 1
-  //     } else {
-  //       div = div + 1
-  //     }
-  //     if (div > divNode.length - 1) {
-  //       div = 0
-  //     }
-  //     divNode[div].scrollIntoView({ behavior: 'smooth' })
-  //   })
-  // })
+  React.useEffect(() => {
+    disableScroll();
+    let div = 0;
+    document.body.addEventListener('wheel', async (event) => {
+      if (String(event.deltaY).startsWith('-')) {
+        div = div - 1
+      } else {
+        div = div + 1
+      }
+      if (div < 0 || div > divNode.length - 1) {
+        div = 0 
+      }
+      divNode[div].scrollIntoView({ behavior: 'smooth' })
+    })
+  })
 
 
   return (
@@ -60,7 +58,7 @@ function MoreMe() {
         </TypeIt>
       </div>
       <div className='flex flex-col justify-center items-center h-full w-full'>
-        <div className='scroll h-screen flex w-full margincenter 1'>
+        <div id="front" className='scroll h-screen flex w-full margincenter 1'>
           <div className='flex justify-center items-center w-full'>
             <div className='flex w-2/4 h-full justify-center items-center'>
               <img src="https://www.mynerdlifebr.com.br/wp-content/uploads/2020/08/2020-08-26-back-front-end-2.png" alt='teaching' className='w-3/5' />
