@@ -5,6 +5,11 @@
 html{scroll-behavior:smooth}
 
 @layer components {
+
+  body {
+    @apply bg-secondary;
+  }
+
   .front-items{
     @apply mt-2 p-1 bg-test bg-opacity-80 flex items-center gap-2 w-full justify-center rounded-xl shadow-sm hover:scale-105 transition
   }
