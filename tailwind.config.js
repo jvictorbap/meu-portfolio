@@ -7,6 +7,7 @@ module.exports = {
       tertiary: "#EFE943",
       quaternary: "#476A6F",
       quinary: "#0E6BA8",
+      test: "#252525",
     },
     extend: {},
   },

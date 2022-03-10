@@ -4,6 +4,16 @@
 
 html{scroll-behavior:smooth}
 
+@layer components {
+  .front-items{
+    @apply mt-2 p-1 bg-test bg-opacity-80 flex items-center gap-2 w-full justify-center rounded-xl shadow-sm hover:scale-105 transition
+  }
+}
+
+.front-items {
+  box-shadow: 1px 1px 1px rgba(235, 230, 230, 0.233);
+}
+
 body::-webkit-scrollbar {
   width: 5px;               /* width of the entire scrollbar */
 }
