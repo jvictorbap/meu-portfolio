@@ -8,7 +8,7 @@ function Projects() {
   }
 
   return (
-    <div className='scroll 4'>
+    <div id='projects' className='scroll 4'>
       <TypeIt
         options={{
           speed: 100,

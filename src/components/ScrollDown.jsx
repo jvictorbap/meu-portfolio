@@ -4,11 +4,15 @@ import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
 
 function ScrollDown() {
 
+  function scrollToFront() {
+    document.getElementById('front').scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     // Scroll Down
     <div id='scrolldown' className='mt-12 animate-bounce flex flex-col items-center w-full'>
       <p className='fonte'>DESLIZE PARA BAIXO</p>
-      <a href='#front' className='text-primary text-5xl' >
+      <a className='text-primary text-5xl cursor-pointer' onClick={() => scrollToFront()}>
         <FontAwesomeIcon className='mt-2' icon={faAngleDoubleDown} />
       </a>
     </div>

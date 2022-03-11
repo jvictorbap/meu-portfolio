@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { divContext } from './context/Store';
 
 function Scroll(props) {
+
+  let div = useContext(divContext)
 
   function preventDefault(e) {
     e.preventDefault();
@@ -31,21 +34,19 @@ function Scroll(props) {
   let limitarFuncao = false;
   
   React.useEffect(() => {
-    let div = 0;
     disableScroll();
-    document.getElementById('header').scrollIntoView({ behavior: 'smooth' });
     document.body.addEventListener('wheel', async (event) => {
       if (!limitarFuncao) {
         limitarFuncao = true;
         if (String(event.deltaY).startsWith('-')) {
-          div = div - 1
+          div.div = div.div - 1;
         } else {
-          div = div + 1
+          div.div = div.div + 1;
         }
-        if (div < 0 || div > divNode.length - 1) {
-          div = 0 
+        if (div.div < 0 || div > divNode.length - 1) {
+          div.div = 0 
         }
-        divNode[div].scrollIntoView({ behavior: 'smooth' })
+        divNode[div.div].scrollIntoView({ behavior: 'smooth' })
         ScrollTimeout();
       }
     })

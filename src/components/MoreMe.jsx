@@ -1,5 +1,5 @@
 /* eslint-disable getter-return */
-import React from 'react'
+import React, { useContext } from 'react'
 import FrontItem from './FrontItem';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons'

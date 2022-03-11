@@ -6,7 +6,7 @@ import HelmetTitle from '../components/Helmet'
 import MoreMe from '../components/MoreMe'
 import Projects from '../components/Projects'
 import Scroll from '../components/Scroll'
-import Contact from '../components/Contact'
+// import Contact from '../components/Contact'
 import ScrollDown from '../components/ScrollDown'
 
 function Home() {

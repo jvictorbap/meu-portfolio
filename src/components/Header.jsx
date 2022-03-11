@@ -1,7 +1,21 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import logo from '../images/Screenshot_4.png'
+import { divContext } from './context/Store'
 
 function Header() {
+
+  const div = useContext(divContext)
+
+  function scrollToStack(){
+    div.div = 1;
+    document.getElementById('front').scrollIntoView({behavior: 'smooth'})
+  }
+
+  function scrollToProjects(){
+    div.div = 3;
+    document.getElementById('projects').scrollIntoView({behavior: 'smooth'})
+  }
+
   return (
     <header id='header' className='scroll 0 border-b-2 border-quinary bg-emerald-300 h-20 flex rounded-lg w-11/12 margincenterheader'>
       <div className='flex flex-row justify-center items-center grow'>
@@ -9,13 +23,13 @@ function Header() {
           <nav className='w-full'>
             <ul className='flex flex-row justify-evenly'>
               <li>
-                <a href='#0' className='text-2xl fonte text-primary'>About</a>
+                <a className='text-2xl fonte text-primary cursor-pointer' onClick={() => scrollToStack()}>Stacks</a>
               </li>
               <li>
-                <a href='#0' className='text-2xl fonte text-primary'>Projects</a>
+                <a className='text-2xl fonte text-primary cursor-pointer' onClick={() => scrollToProjects()}>Projects</a>
               </li>
               <li>
-                <a href='#0' className='text-2xl fonte text-primary'>Contact</a>
+                <a className='text-2xl fonte text-primary cursor-pointer'>Contact</a>
               </li>
             </ul>
           </nav>
