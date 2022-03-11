@@ -3,15 +3,17 @@ import React, { useContext } from 'react'
 import FrontItem from './FrontItem';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons'
+import ScrollDown from './ScrollDown';
 
 function MoreMe() {
 
   return (
     <div className='flex flex-col justify-center items-center bg-secondary'>
-      <div className='flex flex-col justify-center items-center h-full w-full scroll 1'>
-        <div id="front" className='h-screen flex w-full margincenter'>
+      <div className='flex flex-col justify-center items-center h-full w-full'>
+        <div id="front" className='scroll 1 h-screen flex w-full margincenter'>
           <div className='flex justify-center items-center w-full'>
             <div className='flex w-2/4 h-full justify-center items-center'>
+              <ScrollDown />
               <img data-aos="fade-right" data-aos-delay="250" src="https://www.mynerdlifebr.com.br/wp-content/uploads/2020/08/2020-08-26-back-front-end-2.png" alt='teaching' className='w-3/5' />
             </div>
             <div className='flex-col w-2/4'>
@@ -28,7 +30,7 @@ function MoreMe() {
                 <FrontItem img="https://testing-library.com/img/octopus-128x128.png" text="TDD - RTL" />
               </div>
               <div>
-                <div data-aos="flip-down" data-aos-delay="1500" className='flex flex-col justify-center mx-auto w-2/4'>
+                <div data-aos="flip-down" data-aos-delay="1500" className='mt-4 flex flex-col justify-center mx-auto w-2/4'>
                   <div className='flex items-center justify-center h-10 gap-2'>
                     <FontAwesomeIcon icon={faQuestionCircle} />
                     <p className='fonte'>Experiência trabalhando com frameworks.</p>
@@ -54,9 +56,10 @@ function MoreMe() {
             </div>
           </div>
         </div>
-        <div className='scroll h-screen flex w-full margincenter 2'>
+        <div id='back' className='scroll 2 h-screen flex w-full margincenter '>
           <div className='flex justify-center items-center w-full'>
             <div className='flex w-2/4 h-full justify-center items-center'>
+              <ScrollDown />
               <img data-aos="fade-right" data-aos-delay="250" src="https://www.getsetgoweb.com/assets/images/backend-devlopement/back-end-development.png" alt='teaching' className='w-3/5' />
             </div>
             <div className='w-2/4'>
@@ -72,7 +75,7 @@ function MoreMe() {
                 <FrontItem img="https://programathor.com.br/blog/wp-content/uploads/2018/08/api-768x768.png" text="API RESTful" />
               </div>
               <div>
-                <div data-aos="flip-down" data-aos-delay="1500" className='flex flex-col justify-center mx-auto w-2/4'>
+                <div data-aos="flip-down" data-aos-delay="1500" className='mt-4 flex flex-col justify-center mx-auto w-2/4'>
                   <div className='flex items-center justify-center h-10 gap-2'>
                     <FontAwesomeIcon icon={faQuestionCircle} />
                     <p className='fonte'>Experiência trabalhando com frameworks.</p>

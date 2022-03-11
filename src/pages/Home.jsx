@@ -18,7 +18,7 @@ function Home() {
         <Cover anime='fade-down' duration='1000'>
           <Header />
           <AboutMe />
-          <ScrollDown />
+          {/* <ScrollDown /> */}
         </Cover>
         <MoreMe />
         <Projects />
