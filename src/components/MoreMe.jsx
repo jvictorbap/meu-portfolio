@@ -1,6 +1,5 @@
 /* eslint-disable getter-return */
 import React from 'react'
-import TypeIt from "typeit-react";
 import FrontItem from './FrontItem';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons'
@@ -9,26 +8,16 @@ function MoreMe() {
 
   return (
     <div className='flex flex-col justify-center items-center bg-secondary'>
-      <div className=''>
-        <TypeIt
-          options={{
-            speed: 100,
-            cursor: false,
-            waitUntilVisible: true,
-          }}
-        >
-          <h1 className='text-5xl text-primary moremetitle text-center lg:text-6xl font-medium fonte'>TECHNOLOGIES</h1>
-        </TypeIt>
-      </div>
       <div className='flex flex-col justify-center items-center h-full w-full scroll 1'>
         <div id="front" className='h-screen flex w-full margincenter'>
           <div className='flex justify-center items-center w-full'>
             <div className='flex w-2/4 h-full justify-center items-center'>
-              <img src="https://www.mynerdlifebr.com.br/wp-content/uploads/2020/08/2020-08-26-back-front-end-2.png" alt='teaching' className='w-3/5' />
+              <img data-aos="fade-right" data-aos-delay="250" src="https://www.mynerdlifebr.com.br/wp-content/uploads/2020/08/2020-08-26-back-front-end-2.png" alt='teaching' className='w-3/5' />
             </div>
             <div className='flex-col w-2/4'>
               <div className='flex justify-center mx-auto w-2/4'>
-                <h1 className='text-6xl text-primary border-b-2 border-quinary text-center fonte'>Front End</h1>
+                <h1 data-aos="fade-left" data-aos-delay="500"
+                  className='text-6xl text-primary border-b-2 border-quinary text-center fonte'>Front End</h1>
               </div>
               <div className='flex flex-col justify-center items-center w-1/4 mx-auto mt-2'>
                 <FrontItem img="https://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-html-5-icon.png" text="HTML" />
@@ -39,7 +28,7 @@ function MoreMe() {
                 <FrontItem img="https://testing-library.com/img/octopus-128x128.png" text="TDD - RTL" />
               </div>
               <div>
-                <div className='flex flex-col justify-center mx-auto w-2/4'>
+                <div data-aos="flip-down" data-aos-delay="1500" className='flex flex-col justify-center mx-auto w-2/4'>
                   <div className='flex items-center justify-center h-10 gap-2'>
                     <FontAwesomeIcon icon={faQuestionCircle} />
                     <p className='fonte'>Experiência trabalhando com frameworks.</p>
@@ -68,11 +57,11 @@ function MoreMe() {
         <div className='scroll h-screen flex w-full margincenter 2'>
           <div className='flex justify-center items-center w-full'>
             <div className='flex w-2/4 h-full justify-center items-center'>
-              <img src="https://www.getsetgoweb.com/assets/images/backend-devlopement/back-end-development.png" alt='teaching' className='w-3/5' />
+              <img data-aos="fade-right" data-aos-delay="250" src="https://www.getsetgoweb.com/assets/images/backend-devlopement/back-end-development.png" alt='teaching' className='w-3/5' />
             </div>
             <div className='w-2/4'>
               <div className='flex justify-center mx-auto w-2/4'>
-                <h1 className='text-6xl text-primary border-b-2 border-tertiary text-center fonte'>Back End</h1>
+                <h1 data-aos="fade-left" data-aos-delay="500" className='text-6xl text-primary border-b-2 border-tertiary text-center fonte'>Back End</h1>
               </div>
               <div className='flex flex-col justify-center items-center w-1/4 mx-auto mt-2'>
                 <FrontItem img="https://findicons.com/files/icons/2420/coded/256/sql.png" text="SQL" />
@@ -83,7 +72,7 @@ function MoreMe() {
                 <FrontItem img="https://programathor.com.br/blog/wp-content/uploads/2018/08/api-768x768.png" text="API RESTful" />
               </div>
               <div>
-                <div className='flex flex-col justify-center mx-auto w-2/4'>
+                <div data-aos="flip-down" data-aos-delay="1500" className='flex flex-col justify-center mx-auto w-2/4'>
                   <div className='flex items-center justify-center h-10 gap-2'>
                     <FontAwesomeIcon icon={faQuestionCircle} />
                     <p className='fonte'>Experiência trabalhando com frameworks.</p>

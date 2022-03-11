@@ -29,10 +29,11 @@ function Scroll(props) {
   }
 
   let limitarFuncao = false;
-
+  
   React.useEffect(() => {
-    disableScroll();
     let div = 0;
+    disableScroll();
+    document.getElementById('header').scrollIntoView({ behavior: 'smooth' });
     document.body.addEventListener('wheel', async (event) => {
       if (!limitarFuncao) {
         limitarFuncao = true;
