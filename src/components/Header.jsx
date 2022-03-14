@@ -29,7 +29,7 @@ function Header() {
                 <a className='text-2xl fonte text-primary cursor-pointer' onClick={() => scrollToProjects()}>Projects</a>
               </li>
               <li>
-                <a className='text-2xl fonte text-primary cursor-pointer'>Contact</a>
+                <a href='https://wa.me/558897800972?text=Ol%C3%A1+Victor%2C+tenho+interesse+em+tirar+d%C3%BAvidas+sobre+seus+servi%C3%A7os' className='text-2xl fonte text-primary cursor-pointer'>Contact</a>
               </li>
             </ul>
           </nav>

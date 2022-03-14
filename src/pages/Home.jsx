@@ -7,7 +7,6 @@ import MoreMe from '../components/MoreMe'
 import Projects from '../components/Projects'
 import Scroll from '../components/Scroll'
 // import Contact from '../components/Contact'
-import ScrollDown from '../components/ScrollDown'
 
 function Home() {
 
@@ -18,7 +17,6 @@ function Home() {
         <Cover anime='fade-down' duration='1000'>
           <Header />
           <AboutMe />
-          {/* <ScrollDown /> */}
         </Cover>
         <MoreMe />
         <Projects />

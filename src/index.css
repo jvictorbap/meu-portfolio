@@ -15,6 +15,10 @@ html{scroll-behavior:smooth}
   }
 }
 
+body {
+  color: white;
+}
+
 .front-items {
   box-shadow: 1px 1px 1px rgba(235, 230, 230, 0.233);
 }
@@ -46,10 +50,6 @@ body::-webkit-scrollbar-thumb {
 
 .altura {
   height: 400px;
-}
-
-body {
-  color: #FFFCFF;
 }
 
 .shadowtitle {
