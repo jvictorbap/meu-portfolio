@@ -1,6 +1,7 @@
 import React from 'react'
 import AboutMe from '../components/AboutMe'
 import Cover from '../components/Cover'
+import Footer from '../components/Footer'
 import Header from '../components/Header'
 import HelmetTitle from '../components/Helmet'
 import MoreMe from '../components/MoreMe'
@@ -21,6 +22,7 @@ function Home() {
         <MoreMe />
         <Projects />
         {/* <Contact /> */}
+        <Footer />
       </Scroll>
     </>
   )

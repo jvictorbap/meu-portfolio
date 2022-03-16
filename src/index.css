@@ -13,6 +13,18 @@ html{scroll-behavior:smooth}
   .front-items{
     @apply mt-2 p-1 bg-test bg-opacity-80 flex items-center gap-2 w-full justify-center rounded-xl shadow-sm hover:scale-105 transition
   }
+
+  .span {
+    @apply text-red;
+  }
+}
+
+.shadowtitle-virus {
+  text-shadow: 5px 5px 2px #a8200e;
+}
+
+.span {
+  text-shadow: 3px 5px 2px #252525;
 }
 
 body {
@@ -46,6 +58,10 @@ body::-webkit-scrollbar-thumb {
 
 .moremetitle {
   text-shadow: 5px 5px 2px deeppink;
+}
+
+.contact {
+  text-shadow: 3px 3px 2px #0E6BA8;
 }
 
 .altura {

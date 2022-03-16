@@ -21,7 +21,7 @@ function ScrollDown() {
   }
 
   return (
-    <div id='scrolldown' className='animate-bounce flex flex-col items-center'>
+    <div id='scrolldown' className='hidden xl:flex animate-bounce flex-col items-center'>
       <p className='fonte'>Scroll Down</p>
       <a className='text-primary text-5xl cursor-pointer' onClick={() => scrollTo()}>
         <FontAwesomeIcon className='mt-2' icon={faAngleDoubleDown} />

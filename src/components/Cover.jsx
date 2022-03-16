@@ -7,7 +7,7 @@ function Cover(props) {
   // data-aos="fade-down" data-aos-duration="1000"
   AOS.init();
   return (
-    <div id='cover' data-aos={props.anime} data-aos-duration={props.duration} className='h-screen bg-secondary'>{props.children}
+    <div id='cover' data-aos={props.anime} data-aos-duration={props.duration} className='w-full lg:h-screen xl:h-screen'>{props.children}
     </div>
   )
 }

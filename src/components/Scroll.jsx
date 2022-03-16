@@ -34,7 +34,7 @@ function Scroll(props) {
   let limitarFuncao = false;
   
   React.useEffect(() => {
-    disableScroll();
+    // disableScroll();
     document.body.addEventListener('wheel', async (event) => {
       if (!limitarFuncao) {
         limitarFuncao = true;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Card from "../components/Card";
-import Scroll from "../components/Scroll";
+// import Scroll from "../components/Scroll";
 
 function App() {
   const [fetched, setFetched] = useState(false);

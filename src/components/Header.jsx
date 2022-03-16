@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import logo from '../images/Screenshot_4.png'
+// import logo from '../images/Screenshot_4.png'
 import { divContext } from './context/Store'
 
 function Header() {
@@ -17,9 +17,9 @@ function Header() {
   }
 
   return (
-    <header id='header' className='scroll 0 border-b-2 border-quinary bg-emerald-300 h-20 flex rounded-lg w-11/12 margincenterheader'>
+    <header id='header' className='hidden lg:flex xl:flex border-b-2 border-quinary bg-emerald-300 h-20  rounded-lg w-11/12 margincenterheader'>
       <div className='flex flex-row justify-center items-center grow'>
-        <div className='flex flex-row w-2/6 justify-center '>
+        <div className='flex flex-row w-2/6 grow xl:grow-0 justify-center '>
           <nav className='w-full'>
             <ul className='flex flex-row justify-evenly'>
               <li>
@@ -34,10 +34,10 @@ function Header() {
             </ul>
           </nav>
         </div>
-        <div className='flex flex-row w-2/6 justify-center'>
+        <div className='flex-row w-2/6 hidden xl:flex justify-center'>
           {/* <img className='w-20' src={logo} alt="logo" /> */}
         </div>
-        <div className='flex flex-row w-2/6 justify-center'>
+        <div className='flex flex-row w-2/6 grow xl:grow-0 justify-center'>
           <nav className='w-full'>
             <ul className="flex flex-row justify-evenly">
               <li className="">
