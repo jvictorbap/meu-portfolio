@@ -7,6 +7,10 @@ function Projects() {
     window.location.href = "/qrcode"
   }
 
+  function intibiome(){
+    window.open("https://intibiome-clone.herokuapp.com/", "_blank")
+  }
+
   function virusSearcher(){
     window.location.href = "/virussearcher"
   }
@@ -23,8 +27,21 @@ function Projects() {
         <h1 className='text-5xl text-primary moremetitle text-center lg:text-6xl font-medium fonte'>PROJECTS</h1>
       </TypeIt>
       <div className='flex flex-col w-full xl:w-3/4 mx-auto'>
-        <div className='flex flex-col lg:flex-row xl:flex-row justify-center items-center bg-secondary mt-2 hvr-underline-from-center hover:scale-105 transition cursor-pointer' onClick={() => qrCode()}>
-          <div className='w-4/4 xl:w-1/2 h-full'>
+        <div className='flex flex-col lg:flex-row xl:flex-row justify-center items-center bg-secondary mt-4 hvr-underline-from-center hover:scale-105 transition cursor-pointer' onClick={() => intibiome()}>
+          <div className='w-4/4 xl:w-1/2 h-full shadow-md shadow-quaternary'>
+            <img src="https://i.imgur.com/HU5AzKf.png" alt="" className='w-full h-full grayscale' />
+          </div>
+          <div className='flex flex-col xl:w-3/5 justify-center items-center text-center p-2 h-full'>
+            <p className='fonte'>Esse projeto foi feito com ReactJS e Tailwind.</p>
+            <p className='fonte'>Basicamente esse projeto foi fazer um clone da pagina da intibiome, respeitando a identidade visual da pagina, seguindo a metodologia de mobile first.</p>
+            <p className='fonte'>Adicionado alguns efeitos de scroll e scrollbar.</p>
+            <p className='fonte'>SPA responsiva.</p>
+          </div>
+        </div>
+      </div>
+      <div className='flex flex-col w-full xl:w-3/4 mx-auto'>
+        <div className='flex flex-col lg:flex-row xl:flex-row justify-center items-center bg-secondary mt-4 hvr-underline-from-center hover:scale-105 transition cursor-pointer' onClick={() => qrCode()}>
+          <div className='w-4/4 xl:w-1/2 h-full shadow-md shadow-quaternary'>
             <img src="https://i.imgur.com/qAsQkpp.png" alt="" className='w-full h-full' />
           </div>
           <div className='flex flex-col xl:w-3/5 justify-center items-center text-center p-2 h-full'>
@@ -34,8 +51,8 @@ function Projects() {
             <p className='fonte'>Ao escanear o QRCODE a pessoa é redirecionada para o link ou é exibido o texto com o conteudo passado.</p>
           </div>
         </div>
-        <div className='flex flex-col lg:flex-row xl:flex-row justify-center items-center bg-secondary mt-2 hvr-underline-from-center hover:scale-105 transition  mb-16 cursor-pointer' onClick={() => virusSearcher()}>
-          <div className='w-4/4 xl:w-1/2 h-full'>
+        <div className='flex flex-col lg:flex-row xl:flex-row justify-center items-center bg-secondary mt-4 hvr-underline-from-center hover:scale-105 transition  mb-16 cursor-pointer' onClick={() => virusSearcher()}>
+          <div className='w-4/4 xl:w-1/2 h-full shadow-md shadow-red'>
             <img src="https://i.imgur.com/yOdTZqi.png" alt="" className='w-full h-full' />
           </div>
           <div className='flex flex-col xl:w-3/5 justify-center items-center text-center p-2 h-full'>
